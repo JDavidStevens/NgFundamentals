@@ -17,6 +17,12 @@ export class EventService {
       // tslint:disable-next-line: no-use-before-declare
       return EVENTS.find(e => e.id === id);
     }
+
+    saveEvent(event) {
+      event.id = 999;
+      event.session = [];
+      EVENTS.push(event)
+    }
 }
 
 const EVENTS: IEvent[] = [
