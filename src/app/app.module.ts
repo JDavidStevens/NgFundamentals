@@ -11,7 +11,8 @@ import {
   CreateEventComponent,
   EventRouteActivator,
   EventListResolver,
-  CreateSessionComponent
+  CreateSessionComponent,
+  SessionListComponent
 } from './events/index';
 
 import { ToastrModule } from 'ngx-toastr';
@@ -32,7 +33,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'
     EventDetailsComponent,
     CreateEventComponent,
     Error404Component,
-    CreateSessionComponent
+    CreateSessionComponent,
+    SessionListComponent
   ],
   imports: [
     BrowserModule,
