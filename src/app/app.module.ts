@@ -16,6 +16,7 @@ import {
 } from './events/index';
 
 import { ToastrModule } from 'ngx-toastr';
+import { CollapsibleWellComponent} from './common/collapsible-well.component';
 
 import { EventsAppComponent } from './events-app.component';
 import { NavBarComponent } from './nav/navbar.component';
@@ -34,7 +35,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'
     CreateEventComponent,
     Error404Component,
     CreateSessionComponent,
-    SessionListComponent
+    SessionListComponent,
+    CollapsibleWellComponent
   ],
   imports: [
     BrowserModule,
