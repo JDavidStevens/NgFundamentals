@@ -1,26 +1,37 @@
 <div>
     <h1>Experimental Page</h1>
     <div>
-        <collapsible-well>
-            <div well-title>
+        <!-- <collapsible-well> -->
+            <!-- <div well-title> -->
+            <div>
                 <h2>I AM THE TITLE</h2>
             </div>
-            <div well-body>
+            <!-- <div well-body> -->
+            <div>
                 <form>
                     <div>
                         <label>Make:</label>
-                        <input/>
+                        <br>
+                        <select style="color: black;">
+                        <option *ngFor="let make of manufacturer" value="make">{{make}}</option>
+                        </select>
                     </div>
                     <div>
                         <label>Model:</label>
-                        <input/>
+                        <br>
+                        <select>
+                            <option></option>
+                        </select>
                     </div>
                     <div>
                         <label>Year:</label>
-                        <input/>
+                        <br>
+                        <select>
+                            <option></option>
+                        </select>
                     </div>
                 </form>
             </div>
-        </collapsible-well>
+        <!-- </collapsible-well> -->
     </div>
 </div>
