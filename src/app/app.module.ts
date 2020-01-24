@@ -12,7 +12,8 @@ import {
   EventRouteActivator,
   EventListResolver,
   CreateSessionComponent,
-  SessionListComponent
+  SessionListComponent,
+  DurationPipe
 } from './events/index';
 
 import { ToastrModule } from 'ngx-toastr';
@@ -24,7 +25,6 @@ import { appRoutes } from './routes';
 import { Error404Component } from './errors/404.component';
 import { AuthService } from './user/auth.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ExperimentComponent } from './events/experiment/experiment.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +38,7 @@ import { ExperimentComponent } from './events/experiment/experiment.component';
     CreateSessionComponent,
     SessionListComponent,
     CollapsibleWellComponent,
-    ExperimentComponent
+    DurationPipe
   ],
   imports: [
     BrowserModule,
